@@ -1,0 +1,360 @@
+@media (max-width: 1200px)
+    .menu
+        padding: 13px 15px
+        &_item
+            padding-right: 19px
+
+    .promo
+        &_header
+            font-size: 50px
+        &_subheader
+            font-size: 34px
+    .mobile
+        &_item
+            width: 290px
+            height: 260px
+    .footer
+        &_headers
+            padding: 0 315px
+        &_subheaders
+            padding: 0 293px
+        &_icons_map
+            right: 15px
+            img
+                width: 90px
+                height: 26px
+
+
+@media (max-width: 991px)
+    .menu
+        padding: 13px 3px
+        &_item
+            padding-right: 17px
+        &_link
+            font-size: 11px
+    .subheader
+        &_logo
+            img
+                width: 100% 
+        &_descr_logo
+            font-size: 11px
+        .number
+            font-size: 19px
+        &_btn
+            width: 100%
+            height: 40px
+            font-size: 13px
+    .promo
+        &_header
+            font-size: 37px
+        &_subheader
+            font-size: 22px
+            margin-top: 8px
+        &_descr
+            font-size: 13px
+        &_btn
+            margin: 85px auto 0 auto
+            width: 240px
+            height: 57px
+            font-size: 17px
+    .job
+        &_item
+            justify-content: center
+            flex-flow: column
+            .job_descr
+                width: 317px
+                margin-top: 15px
+            .job_round
+                margin: 0 95px
+    .uberx
+        min-height: 810px
+        &_round
+            margin-top: 100px
+            width: 530px
+            height: 530px
+        .grid_bg
+            min-height: 311px
+            .uberx_car
+                width: 98%
+            .uberx_descr
+                /** margin-top: -130px **/
+                padding-bottom: 0
+
+    .footer
+        &_icons_map
+            right: 50%
+            transform: translateX(50%)
+            top: 215px
+            padding-bottom: 27px
+        &_icons_network
+            left: 50%
+            transform: translateX(-50%)
+            top: 170px
+        &_block
+            .footer_headers
+                padding: 0 180px
+            .footer_subheaders
+                padding: 0 155px
+
+@media (max-width: 767px)
+    .menu
+        justify-content: center
+        align-items: center
+        position: fixed
+        flex-direction: column
+        top: 0
+        left: -100%
+        /** 100vh не работает **/
+        height: 100% 
+        width: 50%
+        padding: 20px 15px
+        transition: 0.6s all
+        background-color: rgba(0,0,0,.8)
+        &_active
+            left: 0
+        &_item
+            border: none
+            padding-right: 0
+            margin: 10px 0
+        &_link
+            font-size: 20px
+    .subheader
+        .xs-hidden
+            display: none
+        .xs-visible
+            display: block  
+        .number
+            font-size: 17px
+            margin-top: 10px
+            text-align: center
+        &_btn
+            display: block 
+            width: 160px
+            height: 32px
+            margin: 0 auto
+            margin-top: 10px
+    .hamburger
+        display: block
+        position: absolute
+        right: 11px
+        width: 25px
+        top: 50%
+        transform: translateY(-50%)
+        /** (сумма bottom, height) без высоты гамбургер не совсем корректно работает  **/
+        height: 15px 
+        span
+            display: block
+            background-color: #ffffff
+            /** сумма **/
+            margin-bottom: 3px
+            height: 2px
+            width: 100% 
+            border-radius: 20%
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(5px) rotate(40deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(5px) rotate(-40deg)           
+    .promo
+        min-height: 600px
+        &_header
+            margin-top: 100px   
+    .job
+
+        &_descr_header
+            text-align: center  
+        &_item
+            margin-top: 20px           
+    .uberx
+        min-height: 700px
+        &_round 
+            height: 390px
+            width: 77%
+            margin-top: 70px
+            padding-top: 23px
+            img
+                width: 104px
+        .grid_bg
+            top: 438px
+            background: #070716 center (center/cover) no-repeat
+            min-height: 200px
+            .uberx_car
+                /** top: -201px **/
+            .uberx_descr
+                margin-top: -130px
+                padding-bottom: 0
+                color: #ffffff
+                font-size: 20px
+    .world
+        min-height: 500px
+        padding: 0
+        .planet
+            min-height: 500px
+            padding: 49px 0 49px 0
+        .planet_look
+            margin-top: 367px
+    .footer
+        &_icons_map
+            top: 220px
+        &_icons_network
+            top: 174px
+        &_block
+            .footer_headers
+                padding: 0 93px
+            .footer_subheaders
+                flex-wrap: wrap
+				justify-content: center
+                padding: 0 110px
+/** min-width: 320px **/
+@media (max-width: 575px) 
+    nav
+        height: 30px      
+    .menu
+        &_item
+            margin: 5px 0
+        &_link
+            font-size: 10px
+    .hamburger
+        width: 20px
+        height: 9px 
+        span
+            margin-bottom: 3px
+            height: 1px
+        &_active
+            span
+                margin-bottom: -1px
+    .subheader
+        height: 60px
+        top: 30px
+        &_logo
+            margin-top: 18px
+        &_descr_logo_none
+            display: none
+        .number
+            font-size: 12px
+            margin-top: 11px
+        &_btn 
+            width: 110px
+            height: 22px
+            margin-top: 9px
+            font-size: 10px
+    .promo
+        min-height: 400px
+        padding: 90px 0 35px 0
+        &_header
+            line-height: 34px
+            font-size: 30px
+            margin: 53px 27px 0 
+        &_subheader
+            font-size: 20px
+        &_descr   
+            display: none
+        &_btn
+            font-size: 16px
+            width: 210px
+            height: 50px
+            margin-top: 64px
+    .job
+        .block
+            margin: 0
+        padding: 22px 0 50px 0
+        &_item
+            margin-top: 0
+            .job_round
+                height: 100px
+                width: 100px
+                margin: 0 auto
+                margin-top: 26px
+        &_descr
+            margin-top: 27px
+            &_header
+                font-size: 16px
+            &_text
+                font-size: 15px
+    .mobile
+        padding: 22px 0 43px 0
+        .row
+            margin-top: 0
+        &_item
+            display: flex
+            margin-top: 30px
+            margin-bottom: 0
+            height: 254px
+            &_subtitle
+                margin: 0 auto
+                padding-top: 81px
+                font-size: 18px
+                line-height: 1.72
+    .uberx
+        min-height: 414px
+        padding: 25px 0 33px 0
+        &_round 
+            height: 264px
+            width: 80%
+            margin-top: 34px
+            padding-top: 10px
+            img
+                width: 59px
+        .grid_bg
+            top: 211px
+            min-height: 203px
+            padding-bottom: 30px
+            .uberx_car
+                top: -83px
+            .uberx_descr
+                margin-top: -69px
+                font-size: 17px
+    .request
+        padding: 25px 0
+        .request_block
+            margin-top: 22px
+            .request_title
+                text-align: left
+                font-size: 16px
+            .request_list
+                padding-left: 36px
+                margin: 6px 0 10px 0
+                li
+                    font-size: 14px
+                    margin-bottom: 7px
+            .request_descr
+                font-size: 14px
+    .world
+        min-height: 360px
+        .planet_look
+            margin-top: 227px
+        .planet
+            min-height: 360px
+            padding: 25px 0 35px 0
+    .footer
+        min-height: 245px
+        padding: 25px 0 20px 0
+        &_icons_map
+            width: 278px
+            top: 198px
+            padding-bottom: 0
+        &_icons_network
+            top: 149px
+        &_block
+            .footer_line
+                width: 253px
+                height: 4px
+            .footer_headers
+                width: 296px
+                padding: 0 10px
+                margin: 0 auto
+                margin-top: 19px
+                a
+                    font-size: 14px
+            .footer_subheaders
+                width: 296px
+                padding: 0 27px
+                margin: 0 auto
+                margin-top: 10px
+            .footer_language
+                margin-top: 13px
